@@ -1,0 +1,68 @@
+.l-instruments {
+  height: 150vh;
+
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 35vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../img/instruments/instruments-bg.jpeg");
+    h2 {
+      color: white;
+    }
+  }
+  .tabs {
+    height: calc(100% - 220px);
+  }
+
+  .tab-nav {
+    padding: 0;
+    width: 30vw;
+    height: 100%;
+    background-color: $bg-black;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      border-bottom: 80px solid white;
+      border-right: 100vw solid transparent;
+    }
+    .tab-item {
+      color: white;
+      list-style: none;
+      background-color: $bg-black;
+      cursor: pointer;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .react-tabs__tab--selected {
+      background-color: white;
+      color: $bg-black;
+      transition: all 0.5s ease-in-out;
+    }
+  }
+
+  .tab-container {
+    padding: 30px;
+    width: 70vw;
+    transition: all 0.5s ease-in-out;
+    img {
+      width: 300px;
+      height: 250px;
+      object-fit: cover;
+    }
+    .big-img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+}

@@ -1,0 +1,73 @@
+.l-facts {
+  position: relative;
+  height: 270px;
+  .num-container {
+    background-color: rgba(0,0,0,0.5);
+  }
+
+  &::after {
+    content: '';
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+    background-size: cover;
+    background: url('../img/number-counter/number-counter-bg.jpg');
+    opacity: 0.7;
+    //box-shadow: 0 0 30px 30px white inset;
+    z-index: -1;
+  }
+  .section-title {
+    color: black;
+    margin: 0 auto;
+    &::after {
+      @include line;
+      margin: 30px auto 0 auto;
+      text-align: center;
+    }
+  }
+  .m-numbers {
+    width: 100%;
+    max-width: 240px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    //border-left: 1px solid $white-opacity;
+    @media screen and(max-width: 992px) {
+      padding-top: 20px;
+      height: 170px;
+    }
+    @media screen and(max-width: 456px) {
+      height: 135px;
+    }
+    &__counter {
+      font-size: 72px;
+      @media screen and(max-width: 992px) {
+        font-size: 54px;
+      }
+      @media screen and(max-width: 575px) {
+        font-size: 40px;
+      }
+    }
+    span {
+      font-size: 14px;
+      line-height: 38px;
+      text-align: center;
+      text-transform: uppercase;
+      @media screen and(max-width: 992px) {
+        line-height: 30px;
+      }
+      @media screen and(max-width: 575px) {
+        font-size: 12px;
+      }
+    }
+
+    .count {
+      font-size: 32px;
+    }
+  }
+}

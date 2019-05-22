@@ -1,0 +1,12 @@
+.l-our-team {
+
+  .team-photo {
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  @import "../modules/m-team-slider.scss";
+
+}

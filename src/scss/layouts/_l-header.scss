@@ -1,0 +1,86 @@
+.l-header {
+  background-color: rgba(0,0,0,0.5);
+  position: fixed;
+  z-index: 1000;
+  width: 100vw;
+  .logo {
+    a {
+      color: white;
+      font-size: 26px;
+    }
+  }
+
+  .nav-desktop {
+    ul {
+      .nav-link {
+        a {
+          font-size: 20px;
+          color: white;
+          text-decoration: none;
+        }
+      }
+      @media screen and (max-width: 992px){
+        li {
+          padding: 0.5rem 0.39rem;
+        }
+      }
+
+    }
+  }
+
+  .nav-mobile {
+    .menu-button {
+      display: flex;
+      flex-direction: column;
+      width: 25px;
+      cursor: pointer;
+      margin-right: 25px;
+      .line {
+        background-color: white;
+        width: 25px;
+        height: 3px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  .mob-items {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: -100vh;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.9);
+    transition: all 0.5s ease-in-out;
+    .nav-link {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+      a {
+        font-size: 24px;
+        color: white;
+        text-decoration: none;
+      }
+    }
+
+    .close-button {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: 30px;
+      right: 35px;
+      font-size: 30px;
+      z-index: 10;
+      color: white;
+      cursor: pointer;
+      //@media screen and (max-width: 575px){
+      //  right: 15px;
+      //}
+    }
+  }
+  .mob-items-position {
+    top: 0;
+    transition: all 0.5s ease-in-out;
+  }
+}

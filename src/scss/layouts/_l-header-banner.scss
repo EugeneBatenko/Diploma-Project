@@ -1,0 +1,71 @@
+.l-header-banner {
+  width: 100vw;
+  height: 510px;
+  background: url("../img/header-banner/header-banner-bg.png") center #336BA0;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: end;
+  &::after {
+    content: '';
+    height: 50px;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(rgba(0,0,0,0), #fff);
+  }
+  .animation {
+    width: 520px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    .st0, .st1, .st2, .st3 {
+      fill: none;
+      stroke: #ffffff;
+      stroke-width: 40;
+      stroke-miterlimit: 10;
+    }
+    .st0 {
+      stroke-dasharray: 12.1947, 12.1947, 12.1947, 12.1947, 12.1947, 12.1947;
+    }
+    .st1 {
+      stroke-dasharray: 50, 90, 200, 30, 40, 0;
+    }
+    .st2 {
+      stroke-linecap: square;
+      stroke-dasharray: 120, 20, 110, 20, 140;
+    }
+    .st3 {
+      stroke-width: 16;
+      stroke-linecap: square;
+    }
+    @media screen and (max-width: 525px){
+      display: none;
+    }
+  }
+}
+.l-header-banner-description {
+  height: calc(100vh - 510px);
+  background-color: #fff;
+  position: relative;
+  @media screen and (max-width: 525px){
+    height: calc(100vh - 400px);
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom: 20vh solid $main-black;
+    border-right: 30vw solid transparent;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-bottom: 20vh solid $main-black;
+    border-left: 30vw solid transparent;
+  }
+}

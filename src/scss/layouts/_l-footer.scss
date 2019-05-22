@@ -1,0 +1,12 @@
+.l-footer {
+  position: fixed;
+  width: 100vw;
+  height: 450px;
+  padding-top: 120px;
+  bottom: 0;
+  background-color: $bg-black;
+  @media screen and (max-width: 575px){
+    padding-top: 190px;
+    height: 800px;
+  }
+}

@@ -1,0 +1,25 @@
+@import "base/base";
+//@import '../../node_modules/react-tabs/style/react-tabs.scss';
+
+//Layouts
+//Main page
+@import "layouts/l-header.scss";
+@import "layouts/l-header-banner.scss";
+@import "layouts/l-about.scss";
+@import "layouts/l-what-include.scss";
+@import "layouts/l-facts.scss";
+@import "layouts/l-our-team.scss";
+@import "layouts/l-footer.scss";
+//Publication page
+@import "layouts/l-publications";
+//Result page
+@import "layouts/l-result-of-research";
+//Timeline page
+@import "layouts/l-timeline.scss";
+//Instruments
+@import "layouts/l-instruments.scss";
+//Login pages
+
+//Modules
+@import "modules/m-hexagon";
+
