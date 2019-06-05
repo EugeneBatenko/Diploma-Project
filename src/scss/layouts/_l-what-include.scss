@@ -5,6 +5,59 @@
       margin: 30px auto 30px;
     }
   }
+  h3 {
+    color: #336BA0;
+  }
+  //Change default tabs
+  .react-tabs__tab--selected {
+    background-color: #336BA0;
+    transition: all 0.5s ease-in-out;
+    &::after {
+      border-left-color: #336BA0;
+    }
+    &::before {
+      border-right-color: #336BA0;
+    }
+  }
+  .react-tabs__tab-panel {
+    display: flex;
+    //flex-direction: column;
+    align-items: center;
+    background: $bg-black;
+    color: white;
+
+  }
+  .react-tabs__tab-panel--selected {
+    position: relative;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    @media screen and (max-width: 992px){
+      min-height: 300px;
+    }
+    @media screen and (max-width: 768px){
+      min-height: 400px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+      left: -68px;
+      width: 0;
+      height: 0;
+      border-top: 112px solid transparent;
+      border-right: 68.5px solid $bg-black;
+      border-bottom: 112px solid transparent;
+      @media screen and (max-width: 992px){
+         display: none;
+      }
+    }
+  }
+  //
+
   .hexagon {
     display: flex;
     align-items: center;
@@ -49,8 +102,8 @@
     }
   }
   .second-hex {
-    margin-top: -90px;
-    margin-bottom: -90px;
+    margin-top: -110px;
+    margin-bottom: -110px;
     z-index: 1;
     @media screen and (max-width: 992px){
       margin-top: -65px;

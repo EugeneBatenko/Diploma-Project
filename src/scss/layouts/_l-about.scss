@@ -17,6 +17,27 @@
     border-top: 10vh solid $main-black;
     border-left: 30vw solid transparent;
   }
+  article {
+    height: 480px;
+    overflow: hidden;
+    &::after {
+      content: '';
+      width: 100%;
+      height: 200px;
+      position: absolute;
+      bottom: 40px;
+      right: 0;
+      background-image: linear-gradient(rgba(0, 0, 0, 0), #fff);
+      z-index: 10;
+    }
+  }
+  .expanded {
+    height: auto;
+    &::after {
+      height: 0px;
+    }
+  }
+
 
   .description {
     p {

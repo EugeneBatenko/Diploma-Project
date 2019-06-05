@@ -16,27 +16,33 @@ class WhatInclude extends Component {
 
                         <div className="d-flex col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                             <TabPanel>
-                                <h3>Medicine</h3>
-                                <p>Medicine (diagnosis of Parkinson's disease stage, diagnosis of Schizophrenia,
-                                    post-traumatic stress disorder, diagnosis in psychiatry, neurology,
-                                    ophthalmology).</p>
-                                <p>Medical organizations (for diagnosis in psychiatry, neurology, ophthalmology, in
-                                    neurosurgery to determine the state of fatigue of the surgeon).</p>
+                                <div>
+                                    <h3>Medicine</h3>
+                                    <p>Medicine (diagnosis of Parkinson's disease stage, diagnosis of Schizophrenia,
+                                        post-traumatic stress disorder, diagnosis in psychiatry, neurology,
+                                        ophthalmology).</p>
+                                    <p>Medical organizations (for diagnosis in psychiatry, neurology, ophthalmology, in
+                                        neurosurgery to determine the state of fatigue of the surgeon).</p>
+                                </div>
                             </TabPanel>
                             <TabPanel>
-                                <h3>Diagnostic</h3>
-                                <p>Airlines (objective control of the pilots states before the flight to reduce the risk
-                                    of human factors).</p>
-                                <p>Military structures (professional selection in special units, in aviation).</p>
-                                <p>Centers of Experimental Psychology (psychodiagnostics of personality, cognitive
-                                    processes);</p>
-                                <p>Sports organizations (in the training process of athletes in preparation for the
-                                    competition);</p>
-                                <p>Biometrics (for authentication).</p>
+                                <div>
+                                    <h3>Diagnostic</h3>
+                                    <p>Airlines (objective control of the pilots states before the flight to reduce the risk
+                                        of human factors).</p>
+                                    <p>Military structures (professional selection in special units, in aviation).</p>
+                                    <p>Centers of Experimental Psychology (psychodiagnostics of personality, cognitive
+                                        processes);</p>
+                                    <p>Sports organizations (in the training process of athletes in preparation for the
+                                        competition);</p>
+                                    <p>Biometrics (for authentication).</p>
+                                </div>
                             </TabPanel>
                             <TabPanel>
-                                <h3>Research</h3>
-                                <p>information TBA</p>
+                                <div>
+                                    <h3>Research</h3>
+                                    <p>information TBA</p>
+                                </div>
                             </TabPanel>
                         </div>
                     </Tabs>

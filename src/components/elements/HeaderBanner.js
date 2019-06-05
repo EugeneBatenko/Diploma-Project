@@ -5,6 +5,7 @@ class HeaderBanner extends Component {
     render() {
         return (
             <section className="l-header-banner">
+                <h1>Polytech Lab</h1>
                 <div className="animation">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                          xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"

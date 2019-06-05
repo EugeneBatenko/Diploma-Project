@@ -35,7 +35,7 @@ class Facts extends Component {
                     </div>
                     <div className="m-numbers col">
                         <h2 className="m-numbers__counter">
-                            <CountUp className="count" time={2000} delay={5} end={5}/>
+                            <CountUp className="count" time={2000} delay={3} end={7}/>
                         </h2>
                         <span>members</span>
                     </div>

@@ -35,20 +35,28 @@ class Header extends Component {
 
                                 <li className="nav-link"><NavLink to="/Instruments" activeStyle={{
                                     color: "royalblue",
+                                    borderBottom: "3px solid royalblue",
+                                    paddingBottom: "16px",
                                     transition: "all 0.5s easy-in-out"
                                 }}>Instruments</NavLink></li>
 
                                 <li className="nav-link"><a href="server/results.php">Results</a></li>
 
                                 <li className="nav-link"><NavLink to="/Timeline" activeStyle={{
-                                    color: "royalblue"
+                                    color: "royalblue",
+                                    borderBottom: "3px solid royalblue",
+                                    paddingBottom: "16px",
                                 }}>Timeline</NavLink></li>
 
                                 <li className="nav-link"><NavLink to="/Awards" activeStyle={{
-                                    color: "royalblue"
+                                    color: "royalblue",
+                                    borderBottom: "3px solid royalblue",
+                                    paddingBottom: "16px",
                                 }}>Awards</NavLink></li>
                                 <li className="nav-link"><NavLink to="/AboutUs" activeStyle={{
-                                    color: "royalblue"
+                                    color: "royalblue",
+                                    borderBottom: "3px solid royalblue",
+                                    paddingBottom: "16px",
                                 }}>About Us</NavLink></li>
                             </ul>
                         </nav>

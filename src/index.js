@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route} from "react-router-dom";
+import { HashRouter as Router, Route} from "react-router-dom";
 //Pages
 import MainPage from './components/pages/MainPage/MainPage';
 import Instruments from './components/pages/Instruments/Instruments';

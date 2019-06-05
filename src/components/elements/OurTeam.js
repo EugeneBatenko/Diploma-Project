@@ -6,10 +6,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF, faTelegram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 //Img
-import OurTeamImg from '../pages/MainPage/img/image-probe.jpg';
 import PavlenkoImg from '../pages/MainPage/img/Pavlenko.jpg';
 import ChoriImg from '../pages/MainPage/img/Chori.jpg';
 import KotovImg from '../pages/MainPage/img/Kotov.jpg';
+import GodOfThisWebSite from '../pages/MainPage/img/GodOfThisWebSite.jpg';
+import Karpenko from '../pages/MainPage/img/Karpenko.jpg';
+import Rianichev from '../pages/MainPage/img/Rianichev.jpeg';
+import Aktorshev from '../pages/MainPage/img/Aktorshev.jpeg';
+//Slider
 import NextArrowIcon from '../pages/MainPage/img/nextArrow.svg';
 import PrevArrowIcon from '../pages/MainPage/img/prevArrow.svg';
 
@@ -140,12 +144,28 @@ class OurTeam extends Component {
 
                             <div className="slide">
                                 <figure className="img-container mb-4">
-                                    <img src={OurTeamImg} alt=""/>
+                                    <img src={GodOfThisWebSite} alt="He left"/>
                                 </figure>
 
-                                <div className="slide-content d-flex flex-column align-items-center mb-3"><h5>Name
-                                    Surname</h5>
-                                    <p>developer</p>
+                                <div className="slide-content d-flex flex-column align-items-center mb-3"><h5>Yevhen Batenko</h5>
+                                    <p>Web developer</p>
+                                    <p><FontAwesomeIcon icon={faEnvelope}/> batenko_e_v@ukr.net</p>
+                                    <p><FontAwesomeIcon icon={faPhone}/> phone number</p>
+                                </div>
+
+                                <div className="social">
+                                    {/*<Link className="social-link" to="#"><FontAwesomeIcon icon={faTelegram}/></Link>*/}
+                                    <a className="social-link" href="https://www.linkedin.com/in/eugene-batenko-west-lion/"><FontAwesomeIcon icon={faLinkedin}/></a>
+                                </div>
+                            </div>
+
+                            <div className="slide">
+                                <figure className="img-container mb-4">
+                                    <img src={Karpenko} alt="karpenko"/>
+                                </figure>
+
+                                <div className="slide-content d-flex flex-column align-items-center mb-3"><h5>Karpenko Serhii</h5>
+                                    <p>Data Analyst</p>
                                     <p><FontAwesomeIcon icon={faEnvelope}/> example@mail.com</p>
                                     <p><FontAwesomeIcon icon={faPhone}/> phone number</p>
                                 </div>
@@ -159,12 +179,29 @@ class OurTeam extends Component {
 
                             <div className="slide">
                                 <figure className="img-container mb-4">
-                                    <img src={OurTeamImg} alt=""/>
+                                    <img src={Rianichev} alt="karpenko"/>
                                 </figure>
 
-                                <div className="slide-content d-flex flex-column align-items-center mb-3"><h5>Name
-                                    Surname</h5>
-                                    <p>developer</p>
+                                <div className="slide-content d-flex flex-column align-items-center mb-3"><h5>Vanya Rianichev </h5>
+                                    <p>Data Analyst</p>
+                                    <p><FontAwesomeIcon icon={faEnvelope}/> example@mail.com</p>
+                                    <p><FontAwesomeIcon icon={faPhone}/> phone number</p>
+                                </div>
+
+                                <div className="social">
+                                    <Link className="social-link" to="#"><FontAwesomeIcon icon={faFacebookF}/></Link>
+                                    <Link className="social-link" to="#"><FontAwesomeIcon icon={faTelegram}/></Link>
+                                    <Link className="social-link" to="#"><FontAwesomeIcon icon={faLinkedin}/></Link>
+                                </div>
+                            </div>
+
+                            <div className="slide">
+                                <figure className="img-container mb-4">
+                                    <img src={Aktorshev} alt="karpenko"/>
+                                </figure>
+
+                                <div className="slide-content d-flex flex-column align-items-center mb-3"><h5>Aktorshev Maksym</h5>
+                                    <p>Data Analyst</p>
                                     <p><FontAwesomeIcon icon={faEnvelope}/> example@mail.com</p>
                                     <p><FontAwesomeIcon icon={faPhone}/> phone number</p>
                                 </div>

@@ -2,11 +2,26 @@ import React, {Component} from 'react';
 
 
 class About extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {expand: true};
+
+        // This binding is necessary to make `this` work in the callback
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    handleClick() {
+        this.setState(state => ({
+            expand: !state.expand
+        }));
+    }
+
     render() {
         return (
             <section className="l-about mb-5">
                 <div className="container pt-5">
-                    <article className="row mt-5 mb-5">
+                    <article className={this.state.expand ? "row mt-5 mb-5" : "row mt-5 mb-5 expanded"}>
                         <div className="description col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                             <h2 className="h2-line">About Project</h2>
                             <p>The proposed information technology of indirect control and diagnostics oculo-motor
@@ -57,6 +72,9 @@ class About extends Component {
                         </div>
 
                     </article>
+                    <div className="text-center">
+                        <button className="btn btn-dark btn-expand" onClick={this.handleClick}>Press to Expand</button>
+                    </div>
 
                     {/*<article className="row">*/}
                     {/*    <div className="col text-center">*/}

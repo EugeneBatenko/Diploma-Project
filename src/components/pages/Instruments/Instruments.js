@@ -7,7 +7,7 @@ import Footer from "../../elements/Footer";
 import EyeTribeImg from "../../../img/instruments/instrument1.jpg"
 import TobiiImg from "../../../img/instruments/instrument2.jpg"
 import GP from "../../../img/instruments/instrument3.jpg"
-import Matlab from "../../../img/instruments/content_matlab-simulink_logo.jpg"
+// import Matlab from "../../../img/instruments/content_matlab-simulink_logo.jpg"
 //Scroll restore
 import ScrollToTop from "../../elements/ScrollToTop";
 
@@ -30,7 +30,6 @@ class Instruments extends Component {
                             <TabList className="tab-nav">
                                 <Tab className="tab-item">The EyeTribe Tracker</Tab>
                                 <Tab className="tab-item">Tobii Pro Tracker</Tab>
-                                <Tab className="tab-item">Matlab</Tab>
                                 <Tab className="tab-item">GP3 HD Eye Tracker</Tab>
                                 {/*<Tab className="tab-item">Tab4</Tab>*/}
                                 {/*<Tab className="tab-item">Tab5</Tab>*/}
@@ -67,14 +66,6 @@ class Instruments extends Component {
                                             </div>
                                         </div>
 
-                                    </div>
-                                </TabPanel>
-                                <TabPanel className="tab-content">
-                                    <h3>Matlab</h3>
-                                    <img className="big-img" src={Matlab} alt="Matlab"/>
-
-                                    <div className="col-6">
-                                        <p></p>
                                     </div>
                                 </TabPanel>
                                 <TabPanel className="tab-content">
