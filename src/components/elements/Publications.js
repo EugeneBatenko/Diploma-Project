@@ -10,7 +10,8 @@ class Publications extends Component {
     };
 
     fetchUsers() {
-        fetch("http://eyetracking/server/publication.php")
+        fetch("http://testeyetracing.zzz.com.ua/server/publication.php")
+        // fetch("http://eyetracking/server/publication.php")
             .then(response => response.json())
             .then(data =>
                 this.setState({

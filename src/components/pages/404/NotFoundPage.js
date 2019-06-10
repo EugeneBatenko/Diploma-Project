@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 class NotFoundPage extends Component {
     render() {
         return (
-            <div className="container-wrapper">
+            <div className="not-found-page-container">
                 <div className="container px-0">
                     <div className="row flex-column justify-content-center align-items-center not-found-page">
                         <h2>404</h2>

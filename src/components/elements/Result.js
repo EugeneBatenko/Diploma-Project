@@ -8,7 +8,8 @@ class Result extends Component {
     };
 
     fetchUsers() {
-        fetch("http://eyetracking/server/result.php")
+        fetch("http://testeyetracing.zzz.com.ua/server/result.php")
+        // fetch("http://eyetracking/server/result.php")
             .then(response => response.json())
             .then(data =>
                 this.setState({
