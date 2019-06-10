@@ -16,7 +16,7 @@ class TimeLine extends Component {
                     <div className="timeline-bg pt-5">
                         <div className="container">
 
-                            <h2 className="section-title text-center h2-line pt-1 mb-0">Timeline of project</h2>
+                            <h2 className="section-title text-center h2-line pt-2 mb-0">Timeline of project</h2>
 
                             <section className="l-timeline">
 

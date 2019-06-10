@@ -31,7 +31,12 @@ class Header extends Component {
 
                         <nav className="nav-desktop col d-xl-block d-lg-block d-md-block d-sm-none d-none">
                             <ul className="d-flex justify-content-between align-content-center mb-0">
-                                <li className="nav-link"><a href="server/publications.php">Publications</a></li>
+                                <li className="nav-link"><NavLink to="/Publications" activeStyle={{
+                                    color: "royalblue",
+                                    borderBottom: "3px solid royalblue",
+                                    paddingBottom: "16px",
+                                    transition: "all 0.5s easy-in-out"
+                                }}>Publications</NavLink></li>
 
                                 <li className="nav-link"><NavLink to="/Instruments" activeStyle={{
                                     color: "royalblue",
@@ -40,7 +45,12 @@ class Header extends Component {
                                     transition: "all 0.5s easy-in-out"
                                 }}>Instruments</NavLink></li>
 
-                                <li className="nav-link"><a href="server/results.php">Results</a></li>
+                                <li className="nav-link"><NavLink to="/Result" activeStyle={{
+                                    color: "royalblue",
+                                    borderBottom: "3px solid royalblue",
+                                    paddingBottom: "16px",
+                                    transition: "all 0.5s easy-in-out"
+                                }}>Result</NavLink></li>
 
                                 <li className="nav-link"><NavLink to="/Timeline" activeStyle={{
                                     color: "royalblue",
