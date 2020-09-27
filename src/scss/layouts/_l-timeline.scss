@@ -1,6 +1,6 @@
 /* The actual timeline (the vertical ruler) */
 .timeline-bg {
-  background: url("../img/timeline/timeline-bg.jpg") no-repeat right;
+  background: url("../../img/timeline/timeline-bg.jpg") no-repeat right;
   background-size: cover;
   &::after {
     content: '';

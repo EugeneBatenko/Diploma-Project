@@ -10,7 +10,7 @@
     height: 35vh;
     background-size: cover;
     background-position: center;
-    background-image: url("../img/instruments/instruments-bg.jpeg");
+    background-image: url("../../img/instruments/instruments-bg.jpeg");
     h2 {
       color: white;
     }
@@ -22,7 +22,7 @@
   .tab-nav {
     padding: 0;
     width: 30vw;
-    height: 100%;
+    height: 90%;
     background-color: $bg-black;
     position: relative;
     &::after {
