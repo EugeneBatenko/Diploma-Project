@@ -7,6 +7,7 @@ import Footer from "../../elements/Footer";
 import EyeTribeImg from "../../../img/instruments/instrument1.jpg"
 import TobiiImg from "../../../img/instruments/instrument2.jpg"
 import GP from "../../../img/instruments/instrument3.jpg"
+import pdf from "../../../files/eSmart.pdf"
 // import Matlab from "../../../img/instruments/content_matlab-simulink_logo.jpg"
 //Scroll restore
 import ScrollToTop from "../../elements/ScrollToTop";
@@ -31,10 +32,9 @@ class Instruments extends Component {
                                 <Tab className="tab-item">The EyeTribe Tracker</Tab>
                                 <Tab className="tab-item">Tobii Pro Tracker</Tab>
                                 <Tab className="tab-item">GP3 HD Eye Tracker</Tab>
-                                {/*<Tab className="tab-item">Tab4</Tab>*/}
+                                <Tab className="tab-item">eSmart OPU - DK</Tab>
                                 {/*<Tab className="tab-item">Tab5</Tab>*/}
                             </TabList>
-
 
                             <div className="tab-container">
                                 <TabPanel className="tab-content">
@@ -51,6 +51,7 @@ class Instruments extends Component {
                                     </div>
 
                                 </TabPanel>
+
                                 <TabPanel className="tab-content">
                                     <h3>Tobii Pro</h3>
                                     <div className="row">
@@ -65,9 +66,9 @@ class Instruments extends Component {
                                                     (Lublin, Poland)</p>
                                             </div>
                                         </div>
-
                                     </div>
                                 </TabPanel>
+
                                 <TabPanel className="tab-content">
                                     <h3>GP3 HD Eye Tracker</h3>
                                     <div className="row">
@@ -85,16 +86,13 @@ class Instruments extends Component {
 
                                     </div>
                                 </TabPanel>
-                                {/*<TabPanel className="tab-content">*/}
-                                {/*    <h3>Menu 4</h3>*/}
-                                {/*    <p>visualization of data and processing results of experimental research;</p>*/}
-                                {/*</TabPanel>*/}
-                                {/*<TabPanel className="tab-content">*/}
-                                {/*    <h3>Menu 5</h3>*/}
-                                {/*    <p>classifiers construction using deterministic and statistical methods of*/}
-                                {/*        learning the pattern recognition based on the data obtained using innovative*/}
-                                {/*        tracking technology. </p>*/}
-                                {/*</TabPanel>*/}
+
+                                <TabPanel className="tab-content">
+                                    <h3>eSmart OPU - DK</h3>
+                                    <p>To receive software, write to Pavlenko V.D. email: <a href="mailto:pavlenko_vitalij@mail.ru">pavlenko_vitalij@mail.ru</a></p>
+                                    <p>For more information you can download this manual:</p>
+                                    <a className="btn btn-info" href={pdf} target="blank">eSmart.pdf</a>
+                                </TabPanel>
                             </div>
                         </Tabs>
                     </section>
