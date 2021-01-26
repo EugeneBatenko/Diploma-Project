@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 import { Link } from "react-router-dom";
 //Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
+import {faCode, faEnvelope, faPhone} from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF, faTelegram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 //Img
 import PavlenkoImg from '../pages/MainPage/img/Pavlenko.jpg';
@@ -113,14 +113,15 @@ class OurTeam extends Component {
 
                                 <div className="slide-content d-flex flex-column align-items-center mb-3"><h5>Kotov Dmitriy</h5>
                                     <p>Programmer Android Developer</p>
-                                    <p><FontAwesomeIcon icon={faEnvelope}/> example@mail.com</p>
-                                    <p><FontAwesomeIcon icon={faPhone}/> phone number</p>
+                                    {/*<p><FontAwesomeIcon icon={faEnvelope}/> example@mail.com</p>*/}
+                                    {/*<p><FontAwesomeIcon icon={faPhone}/> phone number</p>*/}
                                 </div>
 
                                 <div className="social">
-                                    <Link className="social-link" to="#"><FontAwesomeIcon icon={faFacebookF}/></Link>
-                                    <Link className="social-link" to="#"><FontAwesomeIcon icon={faTelegram}/></Link>
-                                    <Link className="social-link" to="#"><FontAwesomeIcon icon={faLinkedin}/></Link>
+                                    {/*<Link className="social-link" to="#"><FontAwesomeIcon icon={faFacebookF}/></Link>*/}
+                                    {/*<Link className="social-link" to="#"><FontAwesomeIcon icon={faTelegram}/></Link>*/}
+                                    {/*<Link className="social-link" to="#"><FontAwesomeIcon icon={faLinkedin}/></Link>*/}
+                                    <a className="social-link" href="http://kotdev.inf.ua/" target='_blank'><FontAwesomeIcon icon={faCode}/></a>
                                 </div>
                             </div>
 
@@ -150,12 +151,13 @@ class OurTeam extends Component {
                                 <div className="slide-content d-flex flex-column align-items-center mb-3"><h5>Yevhen Batenko</h5>
                                     <p>Web developer</p>
                                     <p><FontAwesomeIcon icon={faEnvelope}/> batenko_e_v@ukr.net</p>
-                                    <p><FontAwesomeIcon icon={faPhone}/> phone number</p>
+                                    {/*<p><FontAwesomeIcon icon={faPhone}/> phone number</p>*/}
                                 </div>
 
                                 <div className="social">
                                     {/*<Link className="social-link" to="#"><FontAwesomeIcon icon={faTelegram}/></Link>*/}
                                     <a className="social-link" href="https://www.linkedin.com/in/eugene-batenko-west-lion/"><FontAwesomeIcon icon={faLinkedin}/></a>
+                                    <a className="social-link" href="https://project-fenec.batenkoev.now.sh" target='_blank'><FontAwesomeIcon icon={faCode}/></a>
                                 </div>
                             </div>
 
